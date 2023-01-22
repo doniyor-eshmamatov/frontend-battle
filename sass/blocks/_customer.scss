@@ -1,0 +1,145 @@
+.customes-header__paragraph {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    //   padding-bottom: 200px;
+    color: #07484a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer-img {
+    img {
+        border-radius: 12px;
+    }
+}
+
+.carusel-paragraph {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #07484a;
+    max-width: 964px;
+    width: 100%;
+    margin-bottom: 65px;
+    margin-top: 131px;
+}
+
+.cutomers-carusel {
+    display: flex;
+    gap: var(--variable-gap);
+}
+
+// .carusel-body {
+//   padding-top: 54px;
+// }
+.carusel-paragraph__leona {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #07484a;
+}
+
+.carusel-paragraph__ceo {
+    margin-top: 11px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #07484a;
+}
+
+.carusel-over {
+    display: flex;
+    position: relative;
+}
+
+.carusel-panel {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-container {
+    display: flex;
+    position: relative;
+}
+
+.carusel-item {
+    //   opacity: 1;
+    @include transition;
+}
+
+.none {
+    opacity: 0;
+    display: none;
+}
+
+.position-car {
+    position: absolute;
+    //   bottom: 0;
+    top: 300px;
+}
+
+.quot {
+    position: absolute;
+    top: -77px;
+    left: -87px;
+    z-index: 12;
+}
+
+.customer-img {
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carusel-paragraph {
+        max-width: 467px;
+        margin-top: 80px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    :root {
+        --variable-gap: 51px;
+    }
+
+    .position-car {
+        top: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carusel-paragraph {
+        max-width: 275px;
+    }
+
+    .position-car {
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .customer {
+        .hr-div {
+            display: none;
+        }
+    }
+
+    .cutomers-carusel {
+        display: block;
+    }
+
+    .customes-header__paragraph {
+        margin-bottom: 120px;
+    }
+}
+
+// .carusel-body-text {
+//   position: relative;
+//   padding-bottom: 150px;
+// }

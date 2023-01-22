@@ -1,0 +1,182 @@
+.benefits {
+    background: #E0EFF6;
+    width: 100%;
+    padding: 100px 0;
+
+    h3 {
+
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85px;
+        text-align: center;
+        color: #07484A;
+        padding: 80px 0;
+    }
+
+    .benefits-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .block {
+        margin: 20px;
+        text-align: center;
+
+    }
+
+    .img1 {
+        background: #EEEBFF;
+        border-radius: 24px;
+        padding: 20px;
+    }
+
+    .img2 {
+        background: #fff;
+        border-radius: 24px;
+        padding: 20px;
+    }
+
+    .img3 {
+        background: #CAF3E5;
+        border-radius: 24px;
+        padding: 20px;
+    }
+
+    h4 {
+        padding: 10px 0;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #07484A;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #07484A;
+        max-width: 288px;
+        padding: 10px 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .benefits {
+        background: #E0EFF6;
+        width: 100%;
+        padding: 50px 0;
+
+        h3 {
+
+            font-size: 50px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85px;
+            text-align: center;
+            color: #07484A;
+            padding: 80px 0;
+        }
+
+        .block {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h4 {
+            padding: 10px 0;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #07484A;
+        }
+
+        p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            color: #07484A;
+            max-width: 288px;
+            padding: 10px 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .benefits {
+        background: #E0EFF6;
+        width: 100%;
+        padding: 50px 0;
+
+        h3 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 42px;
+            text-align: center;
+            color: #07484A;
+            padding: 80px 0;
+        }
+
+        .benefits-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .block {
+            margin: 20px 0;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

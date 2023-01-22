@@ -1,0 +1,199 @@
+.newsletter {
+    display: flex;
+}
+
+.join_our {
+    background: #E0F6F1;
+    width: 100%;
+    padding: 80px;
+
+    h3 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 85px;
+        letter-spacing: 0.05em;
+        color: #07484A;
+    }
+
+    h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85px;
+        letter-spacing: 0.05em;
+        color: #07484A;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #07484A;
+        padding: 25px 0;
+    }
+}
+
+.input-email {
+    background-color: #E0F6F1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 20px 0;
+
+    &::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #C4C4C4;
+    }
+}
+
+.newsletter_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    width: 250px;
+    height: 68px;
+    background: #70908B;
+    border-radius: 6px;
+    margin: 30px 0;
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FDFBF8;
+    }
+
+    &:hover {
+        background: #55817b;
+        padding: 21px 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .newsletter-photo {
+        width: 512px;
+        background-size: contain;
+    }
+
+    .join_our {
+        background: #E0F6F1;
+        width: 100%;
+        padding: 60px;
+
+        h3 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: #07484A;
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: #07484A;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #07484A;
+            padding: 25px 0;
+        }
+    }
+
+    .input-email {
+        background-color: #E0F6F1;
+        border: none;
+        outline: none;
+        padding: 18px 10px;
+        margin: 20px 0;
+        width: 100%;
+        border-bottom: 2px solid #000;
+
+        &::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #C4C4C4;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-photo {
+        width: 100%;
+    }
+
+    .join_our {
+        background: #E0F6F1;
+        width: 100%;
+        padding: 51px;
+
+        h3 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 85px;
+            letter-spacing: 0.05em;
+            color: #07484A;
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 85px;
+            letter-spacing: 0.05em;
+            color: #07484A;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #07484A;
+            padding: 25px 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .newsletter_btn {
+        display: none;
+    }
+}

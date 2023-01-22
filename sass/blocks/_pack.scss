@@ -1,0 +1,219 @@
+.pack {
+    padding: 100px 0;
+}
+
+.pack__title {
+    margin: 0 0 100px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 96px;
+    color: #07484A;
+    text-align: center;
+}
+
+.pack__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pack__left {
+    margin-right: 100px;
+
+    & img {
+        max-width: 882px;
+        margin: 0 0 32px;
+    }
+}
+
+.pack__subtitle {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #07484A;
+
+    &::after {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 196px;
+        height: 66px;
+        padding: 10px 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FDFBF8;
+        background-color: #70908B;
+        border-radius: 10px;
+        background-image: url('../../images/card-icon.svg');
+        background-repeat: no-repeat;
+        background-position: calc(50% + 50px) center;
+        content: 'Add to cart';
+    }
+}
+
+.pack__stars {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 21px;
+    padding: 0;
+    max-width: 200px;
+    width: 100%;
+    background-image: url('../../images/star.svg');
+    background-position: center left;
+    background-repeat: repeat-x;
+
+    &::after {
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: #07484A;
+        content: '$729.99';
+    }
+}
+
+.pack__list {
+    list-style-type: none;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.pack__desk {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484A;
+
+    & span {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    &::after {
+        display: block;
+        margin-top: 20px;
+        color: #000;
+        content: 'See More...';
+    }
+}
+
+.pack__item {
+    display: flex;
+    margin-bottom: 30px;
+
+    & img {
+        margin-right: 16px;
+        max-width: 210px;
+        height: 149px;
+        overflow: hidden;
+        @include transition;
+        border-radius: 10px;
+    }
+}
+
+.pack__itemtext {
+    padding: 20px 30px;
+    max-width: 420px;
+    h4 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 8px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #07484A;
+
+        &::after {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 115%;
+            letter-spacing: -0.02em;
+            color: #07484A;            
+            content: '$229.99';
+        }
+    }
+    p img {
+        width: 28px;
+        height: 28px;
+    }
+
+    & .lorem {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: #07484A;
+    }
+}
+
+.pack__item:hover {
+    & img {
+        max-width: 249px;
+        height: 149px;
+    }
+
+    .pack__itemtext {
+        background: #E0F6F1;
+        border-radius: 10px;
+
+        p img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1420px) {
+    .pack-hero-img {
+        width: 600px;
+    }
+
+    .pack__list {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .pack__content {
+        flex-direction: column;
+    }
+    .pack-hero-img {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .pack__list {
+        height: 300px;
+    }
+
+    .pack__left {
+        margin-right: 20px;
+    }
+
+    .search {
+        margin-left: 0 !important;
+    }
+    .btn_scroll {
+        margin: 0 auto !important;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .pack__right {
+        max-width: 280px !important;
+    }
+}

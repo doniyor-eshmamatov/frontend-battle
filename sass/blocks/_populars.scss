@@ -1,0 +1,171 @@
+.popular {
+    position: static;
+    margin-bottom: 20px;
+}
+
+.popular-cont-img {
+    position: absolute;
+    left: 0;
+    // width: 926px;
+}
+
+.popular-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.popular-chairs-list {
+    display: flex;
+    gap: 32px;
+    //   position: absolute;
+}
+
+.popular-header {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    color: #07484a;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.popular_pro {
+    position: relative;
+    //   z-index: -1;
+}
+
+.popular-chairs-item {
+    z-index: 2;
+    padding: 60px 40px;
+    gap: 40px;
+    width: 430.75px;
+    background: #caf3e5;
+    border-radius: 16px;
+
+    &:nth-child(2) {
+        background: #e0eff6;
+    }
+
+    &:nth-child(3) {
+        background: #eeebff;
+    }
+
+    &:nth-child(4) {
+        background: #fff4e7;
+    }
+}
+
+.popular-item__paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #70908b;
+    margin: 10px 0;
+}
+
+.popular-item__header {
+    //   width: 350px;
+    width: var(--popular-item-header-width);
+    //   width: 100%;
+    font-weight: 700;
+    font-size: var(--popular-item-header-fsize);
+    line-height: var(--popular-item-header-lHeight);
+    color: #70908b;
+}
+
+.popular-item__price {
+    display: block;
+    margin-top: 10px;
+}
+
+.hr-popular {
+    margin-top: 54px;
+    padding-right: 150px;
+    border: 6px solid #07484a;
+}
+
+.panel {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 10px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 100px 0px;
+        padding: 16px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+
+        &:nth-child(1) {
+            background: #e0eff6;
+        }
+
+        &:nth-child(2) {
+            background: #f9d9da;
+        }
+    }
+}
+
+.popular-hr {
+    position: absolute;
+    left: 0;
+}
+
+.popular-btn {
+    margin-top: 114px;
+    margin-bottom: 22px;
+    @include btn;
+}
+
+.exp-btn {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1120px) {
+    .panel {
+        display: none;
+    }
+
+    :root {
+        --popular-item-header-width: 336px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .popular-chairs-item {
+        padding: 20px;
+
+        img {
+            width: 89px;
+            height: 116px;
+        }
+    }
+
+    :root {
+        --popular-item-header-width: 197px;
+        --popular-item-header-fsize: 18px;
+        --popular-item-header-lHeight: 23px;
+    }
+
+    .popular-header {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .popular-cont-img {
+        img {
+            width: 365px;
+            height: 380px;
+            object-fit: contain;
+            position: absolute;
+            left: -120px;
+        }
+    }
+}
