@@ -2379,4 +2379,66 @@ img {
   .customes-header__paragraph {
     margin-bottom: 120px;
   }
+}
+.site-footer {
+  padding: 100px 0;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.socials {
+  display: flex;
+}
+
+.col__item {
+  margin-top: 10px;
+}
+
+.col__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #07484A;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.social__link {
+  margin-right: 30px;
+}
+
+.contacts__item {
+  margin-top: 15px;
+}
+
+.contact__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #07484A;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .site-footer__col {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
